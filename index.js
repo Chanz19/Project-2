@@ -89,4 +89,8 @@ const htmlModalContent = ({id, title, description, url}) => {
 }
 
 
-const updateLocalStorage = () => {}
+const updateLocalStorage = () => {
+    localStorage.setItem('task', JSON.stringify({
+        tasks: state.taskList,
+    }))
+}
