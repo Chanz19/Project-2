@@ -241,6 +241,8 @@ const searchTask = (e) => {
 
     const resultData = state.taskList.filter(({title}) => title.includes(e.target.value));
 
+    console.log(resultData);
+
     resultData.map((cardData) => {
         return taskContents.insertAdjacentHTML("beforeend", htmlTaskContent(cardData))
     })
